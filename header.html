@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+      content="width=390, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title></title>
+  <style>
+    .buttons {
+  width: 90%;
+  margin: 16px auto;
+  display: flex;
+  gap: 12px;
+}
+    /* Pinar Regular */
+@font-face {
+  font-family: 'Pinar';
+  src: url('fonts/Pinar-Regular.woff2') format('woff2'),
+       url('fonts/Pinar-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Pinar-FD';
+  src: url('fonts/Pinar-FD-ExtraBold.woff2') format('woff2'),
+       url('fonts/Pinar-FD-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+    .buttons {
+  margin-top:-5px;       /* remove extra top margin */
+  padding: 10px 0;      /* smaller vertical padding */
+}
+
+
+.buttons.half-bg {
+  margin-top:-2px;  /* distance to next section */
+  padding: 5px 0;      /* inner vertical padding */
+  transform: translateX(8px); /* adjust value as needed */
+
+}
+
+.mobile-wrapper {
+  max-width: 390px;
+  margin: 0 auto;
+  background: #f5f5f5;
+  min-height: 100vh;
+}
+
+.buttons.half-bg1 {
+  margin-top:-2px;  /* distance to next section */
+  padding: 5px 0;      /* inner vertical padding */
+  transform: translateX(8px);
+}
+.buttons.half-bg2{
+  margin-top:-30px;  /* distance to next section */
+  padding: 5px 0;      /* inner vertical padding */
+  transform: translateX(8px);
+} 
+ 
+.buttons {
+  width: 90%;
+  
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+  position: relative;
+  padding: 12px 0 6px; 
+}
+       .buttons.half-bg3::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 46%;          
+  background: #e1c8eb;
+  border-radius: 20px;
+  z-index: 0;
+}
+.btn {
+  position: relative;
+  z-index: 1;
+}
+
+    .buttons.half-bg::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -3%;
+  
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 46%;          
+  background: #e3f1ff;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+
+    .buttons.half-bg1::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -3%;
+  
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 46%;          
+  background: #e8ffe7;
+  border-radius: 20px;
+  z-index: 0;
+}
+    .buttons.half-bg2::before {
+  content: "";
+  position: absolute;
+  bottom: 20px;
+  left: -3%;
+     
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  width: 100%;
+  height: 46%;          
+  background: #fff1e2;
+  border-radius: 20px;
+  z-index: 0;
+}
+.btn span {
+  margin-bottom: 2px;
+  line-height: 1.2;
+   color: #000;
+  font-size: 14px;
+  font-weight: 500;
+
+}
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+* {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+.btn {
+  
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Pinar', system-ui, sans-serif;
+  gap: 8px;
+}
+
+.circle {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #0e77d9;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+    .circle3 {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #a400e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+    .circle1 {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #04a800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+        .circle2 {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #fc7715;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+            .circle4 {
+  width: 70px;
+  height: 70px;
+  border-radius: 20px;
+  background: #a400e1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.circle1 img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+    .circle2 img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+       .circle4 img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+.circle img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+    .circle3 img {
+  width: 120px;
+  height: 120px;
+  object-fit: contain;
+}
+
+
+.special-buttons .buttons {
+  grid-template-columns: repeat(3, 1fr);
+  padding-right: 35px;   /* your existing right space */
+  gap: 32px;             
+}
+
+
+.btn:hover .circle,
+.btn:hover .circle1,
+.btn:hover  .circle2,
+.btn:hover   .circle3,
+.btn:hover    .circle4{
+  transform: translateY(-4px);
+  box-shadow: 0 10px 24px rgba(0,0,0,0.2);
+}
+
+
+.photo-roll {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
+  width: 100%;                 
+  margin-top:-35px;
+  border-radius: 10px;        
+  box-sizing: border-box;     
+  padding: 0;                 
+  gap: 0;                    
+}
+
+.photo-item {
+  flex: 0 0 100%;             
+  scroll-snap-align: start;
+  border-radius: 10px;        
+  overflow: hidden;           
+  margin: 0;                  
+}
+
+.photo-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;          
+  display: block;
+}
+
+
+
+.photo-roll::-webkit-scrollbar {
+  display: none;                  
+}
+
+.photo-roll::-webkit-scrollbar-thumb {
+  background-color: rgba(0,0,0,0.3);
+  border-radius: 4px;
+}
+
+.photo-roll::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+  border-radius: 4px;
+}
+.photo-roll {
+  -webkit-overflow-scrolling: touch; 
+}
+
+
+.buttons-wrapper {
+  width: 90%;
+  margin: 12px auto;
+  padding: 16px 0;
+  border-radius: 20px;
+}
+
+.blue-bg {
+  background: #e3f1ff;
+}
+
+
+
+    body {
+      margin: 0;
+      font-family: 'Pinar', system-ui, sans-serif;
+      background: #f5f5f5;
+    }
+
+    
+    .header {
+  background-color: #000cf7; 
+  color: #fff;
+  margin: 13px auto 0; 
+  padding: 4px 16px;  /* smaller top/bottom padding */
+  font-family: 'Pinar-FD', system-ui, sans-serif;
+  border-radius: 20px;    
+  width: 90%;              
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Reduce avatar size */
+.avatar img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+
+
+    
+    .menu {
+      width: 30px;
+      cursor: pointer;
+    }
+
+    .menu span {
+      display: block;
+      height: 3px;
+      background: #fff;
+      margin: 5px 0;
+      border-radius: 2px;
+    }
+
+   
+
+    /* Center info */
+    .info {
+      font:bold;
+      flex: 1;
+      padding: 0 10px;
+    }
+
+    .name {
+      font-size: 16.5px;
+      font-weight: 600;
+      margin-bottom: 4px;
+      letter-spacing: -0.2px;
+    }
+
+    .details {
+      display: flex;
+      justify-content: flex-start; 
+      gap: 2px;                   
+      font-size: 12.5px;
+    }
+
+    .pill {
+      background: #fff;
+      color: #000;
+      padding: 2px 8px;
+      border-radius: 10px;
+      white-space: nowrap;
+      font-weight: 500;
+      margin-bottom:3px;
+    }
+
+
+.special-header {
+ margin: -12px auto 0;
+  background-color: #000cf7;
+  color: #fff;
+  
+  padding: 6px 12px;
+  border-radius: 20px;
+  width: 90%;
+  height: 44px;              /* 🔒 ارتفاع ثابت */
+  position: relative;        /* لازم برای absolute */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;  /* متن سمت راست */
+
+  font-family: 'Pinar-FD', system-ui, sans-serif;
+  font-size: 14px;
+
+  overflow: visible;         /* 🔥 اجازه خروج عکس */
+}
+
+
+.special-info {
+  font:bold;
+  flex: 1;
+  text-align: right;
+}
+
+
+.special-avatar {
+  position: relative;
+}
+
+/* عکس زیرین */
+.rocket-bg {
+  position: absolute;
+  left:-19px;           
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 150px;
+  height: 150px;
+
+  z-index: 0;         
+  pointer-events: none;
+}
+
+/* راکت (رویی) */
+.rocket {
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 130px;
+  height: 130px;
+
+  z-index: 1;          /* 🔼 روی عکس زیر */
+  pointer-events: none;
+}
+
+
+
+    .phone {
+      text-align: left;
+      direction: ltr;
+    }
+
+    .specialty {
+      text-align: right;
+    }
+
+    .phone {
+      text-align: left;
+      direction: ltr;
+    }
+      
+    /* Sidebar */
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background: #FFF;
+      box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+      padding: 20px;
+      transform: translateX(-100%); /* کاملاً مخفی */
+      transition: transform 0.3s ease;
+      z-index: 1000;
+    }
+
+    .sidebar.active {
+      transform: translateX(0);
+    }
+
+    
+
+    .sidebar.active {
+      left: 0;
+    }
+
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 16px;
+      color: #1e88e5;
+    }
+    .sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+    .sidebar-img-wrapper {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+      flex-shrink:0;
+}
+
+.sidebar-img-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.sidebar-menu li {
+  margin-bottom: 14px;
+}
+
+    .sidebar-menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+    }
+    .sidebar-menu span {
+  font-size: 14px;
+  line-height: 1;
+}
+    .sidebar-menu .sidebar-img {
+  flex-shrink: 0;
+  margin-bottom: -5px; /* tweak this value to perfectly align with text */
+    }
+
+.sidebar-img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+  flex-shrink: 0;         /* :fire: prevents icon shrinking */
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background 0.2s ease;
+}
+
+.sidebar-menu a:hover {
+  background: #f0f0f0;
+}
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 26px;
+  line-height: 1;
+  cursor: pointer;
+  color: #333;
+}
+
+
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.3);
+      display: none;
+      z-index: 900;
+    }
+    
+
+
+.
+
+
+    .overlay.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="mobile-wrapper">
+
+
+    <div class="sidebar" id="sidebar">
+  <div class="sidebar-header">
+    <span>منو</span>
+    <button class="close-btn" onclick="closeSidebar()">×</button>
+  </div>
+
+
+      <ul class="sidebar-menu">
+
+        <li>
+  <a href="page1.html">
+      <img src="images/Pro.svg" class="sidebar-img">
+    <span>سیمرغ پرو</span>
+  </a>
+</li>
+
+  <li>
+    <a href="page1.html">
+      <img src="images/profile-black.svg" class="sidebar-img">
+      <span>پروفایل</span>
+    </a>
+  </li>
+  <li>
+    <a href="page1.html">
+      <img src="images/card.svg" class="sidebar-img">
+      <span>کیف پول</span>
+    </a>
+  </li>
+  <li>
+    <a href="page1.html">
+      <img src="images/interest-black.svg" class="sidebar-img">
+      <span>علاقه‌مندی</span>
+    </a>
+  </li>
+        <li>
+    <a href="page1.html">
+      <img src="images/Settings.svg" class="sidebar-img">
+      <span>تنظیمات</span>
+    </a>
+        </li>
+</ul>
+
+</div>
+
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+
+<div class="overlay" id="overlay" onclick="closeSidebar()"></div>
+
+
+  <div class="overlay" id="overlay"></div>
+
+ <header class="header"> <!-- تصویر فرد (سمت راست) --> <div class="avatar"> 
+   <img src="images/001.png" alt="تصویر فرد" />
+ </div> <!-- اطلاعات فرد --> <div class="info"> <div class="name">دکتر محمد وحیدی</div>
+   <div class="details"> <div class="pill specialty">متخصص و جراح چشم</div>
+     <div class="pill phone">۴۵۲۴۳۰</div>
+   </div> </div> <!-- منوی سایدبار (سمت چپ) -->
+   <div class="menu" onclick="toggleSidebar()">
+     <span></span>
+     <span></span> 
+     <span></span>
+   </div> </header>
+<div class="buttons half-bg">
+  <div class="buttons">
+    <a href="page1.html" class="btn">
+      <div class="circle"><img src="images/04.png"></div>
+      <span>مجوز ها</span>
+    </a>
+
+    <a href="page1.html" class="btn">
+      <div class="circle"><img src="images/05.png"></div>
+      <span>آزمون ها</span>
+    </a>
+
+    <a href="page1.html" class="btn">
+      <div class="circle"><img src="images/06.png"></div>
+      <span>نوبت‌ها</span>
+    </a>
+
+    <a href="page1.html" class="btn">
+      <div class="circle"><img src="images/07.png"></div>
+      <span>کلاس‌ها</span>
+    </a>
+  </div>
+</div>
+<div class="photo-roll">
+  <div class="photo-item">
+    <img src="images/08.png" alt="Photo 1">
+  </div>
+  <div class="photo-item">
+    <img src="images/09.png" alt="Photo 2">
+  </div>
+  <div class="photo-item">
+    <img src="images/18.png" alt="Photo 2">
+  </div>
+  <div class="photo-item">
+    <img src="images/19.png" alt="Photo 2">
+  </div>
+</div>
+<div class="buttons half-bg1">
+<div class="buttons">
+  <a href="page1.html" class="btn">
+    <div class="circle1"><img src="images/10.png"></div>
+    <span> سوپرمارکت</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle1"><img src="images/11.png"></div>
+    <span> فروشگاه</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle1"><img src="images/12.png"></div>
+    <span>غذا</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle1"><img src="images/13.png"></div>
+    <span>مسافرت</span>
+  </a>
+</div>
+</div>
+  
+  <div class="buttons half-bg2">
+     <div class="buttons">
+  <a href="page1.html" class="btn">
+    <div class="circle2"><img src="images/14.png"></div>
+    <span>امور بانکی</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle2"><img src="images/15.png"></div>
+    <span>آموزش</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle2"><img src="images/16.png"></div>
+    <span>سرمایه‌گذاری</span>
+  </a>
+
+  <a href="page1.html" class="btn">
+    <div class="circle2"><img src="images/17.png"></div>
+    <span>بیمه</span>
+  </a>
+</div>
+  </div>
+
+ <div class="special-header">
+  
+  <div class="special-info">
+    خدمات اختصاصی سیمرغ
+  </div>
+
+ 
+  <div class="special-avatar">
+    <img src="images/21.png" alt="rocket" class="rocket">
+  <img src="images/22.png" alt="bg" class="rocket-bg">
+  </div>
+</div>
+<div class="buttons half-bg3 special-buttons">
+  <div class="buttons">
+
+    <a href="page1.html" class="btn">
+      <div class="circle4"><img src="images/prof.svg"></div>
+      <span>پروفایل</span>
+    </a>
+
+    <a href="page1.html" class="btn">
+      <div class="circle4"><img src="images/inter.svg"></div>
+      <span>علاقه‌مندی</span>
+    </a>
+
+    <a href="page1.html" class="btn">
+      <div class="circle4"><img src="images/card-white.svg"></div>
+      <span>کیف پول</span>
+    </a>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+  </div>
+<script>
+  function toggleSidebar() {
+    document.getElementById('sidebar').classList.toggle('active');
+    document.getElementById('overlay').classList.toggle('active');
+  }
+
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+  }
+</script>
+<script>
+  function toggleSidebar() {
+    const sidebar = document.getElementById('sidebar');
+    const overlay = document.getElementById('overlay');
+
+    sidebar.classList.toggle('active');
+    overlay.classList.toggle('active');
+  }
+
+  function closeSidebar() {
+    document.getElementById('sidebar').classList.remove('active');
+    document.getElementById('overlay').classList.remove('active');
+  }
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
